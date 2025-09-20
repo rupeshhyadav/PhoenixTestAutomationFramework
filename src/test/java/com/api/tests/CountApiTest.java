@@ -15,7 +15,7 @@ import io.restassured.module.jsv.JsonSchemaValidator;
 public class CountApiTest {
 
 	@Test
-	public void verifyCountApiResponse() {
+	public void verifyCountApiResponseTest() {
 		Header authHeader = new Header("Authorization", AuthTokenProvider.getToken(Role.FD));
 		RestAssured.given().baseUri(ConfigManager.getProperty("BASE_URI")).and().header(authHeader).when()
 				.get("dashboard/count").then().statusCode(200).body("message", Matchers.equalTo("Success"))
@@ -29,7 +29,7 @@ public class CountApiTest {
 	}
 	
 	@Test
-	public void verifyCountApiWithoutHeader() {
+	public void verifyCountApiWithoutHeaderTest() {
 		RestAssured.given().baseUri(ConfigManager.getProperty("BASE_URI")).
 					when().get("dashboard/count").
 					then().statusCode(401);
