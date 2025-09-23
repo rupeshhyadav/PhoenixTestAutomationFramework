@@ -38,7 +38,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Execute test automation framework
-      run: mvn test -DsuiteXmlFile="{{ github.event.inputs.suiteXMLFile }}" -Denv="${{ github.event.inputs.env }}"
+      run: mvn test -DsuiteXmlFile="${{ github.event.inputs.suiteXMLFile }}" -Denv="${{ github.event.inputs.env }}"
     - name: Upload a Build Artifact
       uses : actions/upload-artifact@v4.6.2
       with : 
