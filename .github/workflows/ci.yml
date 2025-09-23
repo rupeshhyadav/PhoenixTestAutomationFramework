@@ -5,6 +5,18 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+  schedule:
+    - cron: "30 18 * * *"
+  workflow_dispatch:
+    inputs:
+      env:
+        description: "Envoirnment"
+        type : choice
+        options : [qa,uat,dev]
+        required: true
+        default : qa
+        
+    
 
 jobs:
   test:
@@ -20,7 +32,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Execute test automation framework
-      run: mvn test -DsuiteXmlFile=testNg.xml
+      run: mvn test -DsuiteXmlFile=testNg.xml -Denv="${{ github.event.inputs.env }}"
     - name: Upload a Build Artifact
       uses : actions/upload-artifact@v4.6.2
       with : 
