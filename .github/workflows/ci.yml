@@ -13,15 +13,15 @@ on:
     inputs:
       env:
         description: "Environment"
-        type : choice
-        options : [qa,uat,dev]
-        default : qa
+        type: choice
+        options: [qa,uat,dev]
+        default: qa
         required: true
       suiteXmlFile:
         description: "Suite XML File"
-        type : choice
-        options : [testNg.xml,smoke.xml]
-        default : testNg.xml
+        type: choice
+        options: [testNg.xml,smoke.xml]
+        default: testNg.xml
         required: true
        
         
