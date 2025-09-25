@@ -50,8 +50,10 @@ jobs:
           if [ -z "$SUITE" ]; then
             SUITE="testNg.xml"
           fi
+          echo "ENVIRONMENT=$ENVIRONMENT" >> $GITHUB_ENV
+          echo "SUITE=$SUITE" >> $GITHUB_ENV
     - name: Execute test automation framework
-      run: mvn test -DsuiteXmlFile="${{ github.event.inputs.suiteXmlFile }}" -Denv="${{ github.event.inputs.env }}"
+      run: mvn test -DsuiteXmlFile="$SUITE" -Denv="$ENVIRONMENT"
     - name: Upload a Build Artifact
       if: always()
       uses : actions/upload-artifact@v4.6.2
