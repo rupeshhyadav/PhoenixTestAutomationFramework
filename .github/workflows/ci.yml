@@ -12,17 +12,17 @@ on:
   workflow_dispatch:
     inputs:
       env:
-        description: "Envoirnment"
+        description: "Environment"
         type : choice
         options : [qa,uat,dev]
         required: true
         default : qa
-      suiteXMLFile:
+      suiteXmlFile:
         description: "Suite XML File"
         type : choice
         options : [testNg.xml,smoke.xml]
         required: true
-        default : testNg.xml  
+        default : testNg.xml
         
     
 
@@ -40,7 +40,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Execute test automation framework
-      run: mvn test -DsuiteXmlFile="${{ github.event.inputs.suiteXMLFile }}" -Denv="${{ github.event.inputs.env }}"
+      run: mvn test -DsuiteXmlFile="${{ github.event.inputs.suiteXmlFile }}" -Denv="${{ github.event.inputs.env }}"
     - name: Upload a Build Artifact
       if: always()
       uses : actions/upload-artifact@v4.6.2
