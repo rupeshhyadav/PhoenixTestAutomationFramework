@@ -18,7 +18,7 @@ on:
         default: qa
         required: true
       suiteXmlFile:
-        description: "Suite XML File"
+        description: "TestNG XML File"
         type: choice
         options: [testNg.xml,smoke.xml]
         default: testNg.xml
@@ -40,6 +40,16 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+    - name: Set default input if missing
+      run: |
+        ENVIRONMENT="${{ github.event.inputs.env }}"
+        SUITE="${{ github.event.inputs.suiteXmlFile }}"
+        if [ -z "$ENVIRONMENT" ]; then
+            ENVIRONMENT="qa"
+          fi
+          if [ -z "$SUITE" ]; then
+            SUITE="testNg.xml"
+          fi
     - name: Execute test automation framework
       run: mvn test -DsuiteXmlFile="${{ github.event.inputs.suiteXmlFile }}" -Denv="${{ github.event.inputs.env }}"
     - name: Upload a Build Artifact
