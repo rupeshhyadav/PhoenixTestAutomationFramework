@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import com.api.pojo.LoginUserCredentials;
 import com.api.utils.ConfigManager;
+import com.api.utils.SpecUtil;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -15,11 +16,11 @@ public class LoginApiTest {
 	@Test
 	public void loginApiTest() {
 		LoginUserCredentials loginUserCredentials = new LoginUserCredentials("iamfd", "password");
-		RestAssured.given().baseUri(ConfigManager.getProperty("BASE_URI")).and().contentType(ContentType.JSON).and()
-				.accept(ContentType.JSON).and().body(loginUserCredentials).when().post("login").then().statusCode(200)
+		RestAssured.given().spec(SpecUtil.requestSpec(loginUserCredentials)).
+		when().post("login").then().spec(SpecUtil.responseSpec_ok())
 				.and()
 				.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("response-schema/loginResponseSchema.json"))
-				.and().body("message", Matchers.equalTo("Success")).log().all();
+				.and().body("message", Matchers.equalTo("Success"));
 
 	}
 

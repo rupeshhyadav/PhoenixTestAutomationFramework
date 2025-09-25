@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import com.api.utils.AuthTokenProvider;
 import com.api.utils.ConfigManager;
+import com.api.utils.SpecUtil;
 import com.apj.constants.Role;
 
 import io.restassured.RestAssured;
@@ -18,9 +19,10 @@ public class MasterApiTest {
 
 	@Test
 	public void masterApiTest() {
-		Header authHeader = new Header("Authorization", AuthTokenProvider.getToken(Role.FD));
-		RestAssured.given().baseUri(ConfigManager.getProperty("BASE_URI")).and().header(authHeader)
-				.contentType(ContentType.JSON).log().all().when().post("master").then().log().all().statusCode(200)
+
+		RestAssured.given().spec(SpecUtil.requestSpecWithAuth(Role.FD)).
+				
+				when().post("master").then().spec(SpecUtil.responseSpec_ok())
 				.body("message", Matchers.equalTo("Success")).body("data", Matchers.notNullValue())
 				.body("$", Matchers.hasKey("message")).body("$", Matchers.hasKey("data"))
 				.body("data", Matchers.hasKey("mst_oem")).body("data", Matchers.hasKey("mst_model"))
@@ -33,8 +35,8 @@ public class MasterApiTest {
 
 	@Test
 	public void masterApiWithoutHeaderTest() {
-		RestAssured.given().baseUri(ConfigManager.getProperty("BASE_URI")).and().contentType(ContentType.JSON).log()
-				.all().when().post("master").then().log().all().statusCode(401);
+		RestAssured.given().spec(SpecUtil.requestSpec()).
+				when().post("master").then().spec(SpecUtil.responseSpec_text(401));
 
 	}
 }
