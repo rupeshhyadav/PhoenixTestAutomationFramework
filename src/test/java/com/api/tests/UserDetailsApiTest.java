@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import com.api.utils.AuthTokenProvider;
 import com.api.utils.ConfigManager;
+import com.api.utils.SpecUtil;
 import com.apj.constants.Role;
 
 import io.restassured.RestAssured;
@@ -16,14 +17,10 @@ public class UserDetailsApiTest {
 	
 	@Test
 	public void UserDetailsApiTest() {
-		Header authHeader = new Header("Authorization",AuthTokenProvider.getToken(Role.FD));
 		RestAssured.given()
-						.baseUri(ConfigManager.getProperty("BASE_URI"))
-						.and().contentType(ContentType.JSON)
-						.and().accept(ContentType.ANY)
-						.and().header(authHeader)
+						.spec(SpecUtil.requestSpecWithAuth(Role.FD))
 					.when().get("userdetails")
-					.then().statusCode(200)
+					.then().spec(SpecUtil.responseSpec_ok())
 							.and().body("message", Matchers.equalTo("Success"))
 							.and().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("response-schema/userDetailSchema.json")).log().all();
 						
