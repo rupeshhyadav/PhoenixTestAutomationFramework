@@ -3,7 +3,7 @@ package com.api.tests;
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
-import com.api.pojo.LoginUserCredentials;
+import com.api.request.model.LoginUserCredentials;
 import com.api.utils.ConfigManager;
 import com.api.utils.SpecUtil;
 
