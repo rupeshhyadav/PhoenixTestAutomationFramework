@@ -13,6 +13,7 @@ import com.api.request.model.CustomerProduct;
 import com.api.request.model.Problems;
 import com.api.utils.AuthTokenProvider;
 import com.api.utils.ConfigManager;
+import com.api.utils.DateTimeUtil;
 import com.api.utils.SpecUtil;
 import com.apj.constants.Role;
 
@@ -28,8 +29,8 @@ public class CreateJobApiTest {
 				"rupesh1@tes.com");
 		CustomerAddress customerAddress = new CustomerAddress("A", "Aban", "New Street", "Frescho", "MG Road", "560068",
 				"India", "Karnatak");
-		CustomerProduct customerProduct = new CustomerProduct("2025-05-29T18:30:00.000Z", "247523943969769",
-				"247523943969769", "247523943969769", "2025-05-29T18:30:00.000Z", 3, 3);
+		CustomerProduct customerProduct = new CustomerProduct(DateTimeUtil.getTimeWithDaysAgo(10), "247523940969869",
+				"247523940969869", "247523940969869", DateTimeUtil.getTimeWithDaysAgo(10), 3, 3);
 		Problems problems = new Problems(4, "test123");
 		List<Problems> problemList = new ArrayList<Problems>();
 		problemList.add(problems);
