@@ -15,7 +15,7 @@ import io.restassured.module.jsv.JsonSchemaValidator;
 
 public class UserDetailsApiTest {
 	
-	@Test
+	@Test(description = "Verifying if user details API response is shown correctly", groups = { "api", "smoke", "regression" })
 	public void UserDetailsApiTest() {
 		RestAssured.given()
 						.spec(SpecUtil.requestSpecWithAuth(Role.FD))

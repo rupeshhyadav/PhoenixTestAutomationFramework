@@ -2,7 +2,7 @@ package com.api.utils;
 
 import org.apache.http.auth.UsernamePasswordCredentials;
 
-import com.api.pojo.LoginUserCredentials;
+import com.api.request.model.LoginUserCredentials;
 import com.apj.constants.Role;
 
 import io.restassured.RestAssured;

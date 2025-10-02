@@ -15,7 +15,7 @@ import io.restassured.module.jsv.JsonSchemaValidator;
 
 public class CountApiTest {
 
-	@Test
+	@Test(description = "Verifying if count API is giving correct response", groups = { "api", "smoke", "regression" })
 	public void verifyCountApiResponseTest() {
 	
 		RestAssured.given().spec(SpecUtil.requestSpecWithAuth(Role.FD))
@@ -32,7 +32,7 @@ public class CountApiTest {
 
 	}
 	
-	@Test
+	@Test(description = "Verifying if count API giving correct response for invalid token/header", groups = { "api", "negative", "regression" })
 	public void verifyCountApiWithoutHeaderTest() {
 		RestAssured.given().spec(SpecUtil.requestSpec()).
 					when().get("dashboard/count").

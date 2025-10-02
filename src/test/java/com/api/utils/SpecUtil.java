@@ -3,7 +3,7 @@ package com.api.utils;
 import org.apache.http.client.methods.RequestBuilder;
 import org.hamcrest.Matchers;
 
-import com.api.pojo.LoginUserCredentials;
+import com.api.request.model.LoginUserCredentials;
 import com.apj.constants.Role;
 
 import io.restassured.builder.RequestSpecBuilder;
