@@ -15,7 +15,14 @@ import com.api.utils.AuthTokenProvider;
 import com.api.utils.ConfigManager;
 import com.api.utils.DateTimeUtil;
 import com.api.utils.SpecUtil;
+import com.apj.constants.MST_MODEL;
+import com.apj.constants.OEM;
+import com.apj.constants.Platform;
+import com.apj.constants.Problem;
+import com.apj.constants.Product;
 import com.apj.constants.Role;
+import com.apj.constants.ServiceLocation;
+import com.apj.constants.Warranty_Status;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -29,13 +36,15 @@ public class CreateJobApiTest {
 				"rupesh1@tes.com");
 		CustomerAddress customerAddress = new CustomerAddress("A", "Aban", "New Street", "Frescho", "MG Road", "560068",
 				"India", "Karnatak");
-		CustomerProduct customerProduct = new CustomerProduct(DateTimeUtil.getTimeWithDaysAgo(10), "247523940969869",
-				"247523940969869", "247523940969869", DateTimeUtil.getTimeWithDaysAgo(10), 3, 3);
-		Problems problems = new Problems(4, "test123");
+		CustomerProduct customerProduct = new CustomerProduct(DateTimeUtil.getTimeWithDaysAgo(10), "2475900946969869",
+				"2475900946969869", "2475900946969869", DateTimeUtil.getTimeWithDaysAgo(10), Product.NEXUS_2.getCode(),
+				MST_MODEL.NEXUS_2_BLUE.getCode());
+		Problems problems = new Problems(Problem.SMARTPHONE_IS_RUNNING_SLOW.getCode(), "test123");
 		List<Problems> problemList = new ArrayList<Problems>();
 		problemList.add(problems);
-		CreateJobPayload createJobPayload = new CreateJobPayload(0, 2, 1, 2, customer, customerAddress, customerProduct,
-				problemList);
+		CreateJobPayload createJobPayload = new CreateJobPayload(ServiceLocation.SERVICE_LOCATION_A.getCode(),
+				Platform.FRONT_DESK.getCode(), Warranty_Status.IN_WARRANTY.getCode(), OEM.GOOGLE.getCode(), customer,
+				customerAddress, customerProduct, problemList);
 
 		RestAssured.given().spec(SpecUtil.requestSpecWithAuth(Role.FD, createJobPayload)).when().post("job/create")
 				.then().spec(SpecUtil.responseSpec_ok())
