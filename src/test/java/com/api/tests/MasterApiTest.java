@@ -17,7 +17,7 @@ import io.restassured.module.jsv.JsonSchemaValidator;
 
 public class MasterApiTest {
 
-	@Test
+	@Test(description = "Verifying if master API giving correct response", groups = { "api", "smoke", "regression" })
 	public void masterApiTest() {
 
 		RestAssured.given().spec(SpecUtil.requestSpecWithAuth(Role.FD)).
@@ -33,7 +33,7 @@ public class MasterApiTest {
 
 	}
 
-	@Test
+	@Test(description = "Verifying if master API giving correct response status code for invalid token", groups = { "api", "negative", "regression" })
 	public void masterApiWithoutHeaderTest() {
 		RestAssured.given().spec(SpecUtil.requestSpec()).
 				when().post("master").then().spec(SpecUtil.responseSpec_text(401));
