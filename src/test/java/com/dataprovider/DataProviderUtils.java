@@ -10,7 +10,7 @@ import com.dataprovider.api.bean.UserBean;
 public class DataProviderUtils {
 
 	@DataProvider(name = "loginApiDataProvider",parallel = true)
-	public Iterator<UserBean> loginApiDataProvider() {
+	public static Iterator<UserBean> loginApiDataProvider() {
 		return CSVReaderUtil.loadCSV("testData/loginCreds.csv");
 	}
 
