@@ -17,9 +17,9 @@ public class ReadCSVFile {
 		InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream("testData/loginCreds.csv");
 		InputStreamReader isr = new InputStreamReader(is);
 		CSVReader csvReader = new CSVReader(isr);
-		CsvToBean<UserPojo> csvToBean = new CsvToBeanBuilder(csvReader)
-				.withType(UserPojo.class).withIgnoreEmptyLine(true).build();
-		List<UserPojo> userList=csvToBean.parse();
+		CsvToBean<UserBean> csvToBean = new CsvToBeanBuilder(csvReader)
+				.withType(UserBean.class).withIgnoreEmptyLine(true).build();
+		List<UserBean> userList=csvToBean.parse();
 		System.out.println(userList.get(0).getUsername());
 	}
 
