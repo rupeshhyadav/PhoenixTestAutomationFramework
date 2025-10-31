@@ -1,30 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-02T22:19:58 IST" name="Default suite" finished-at="2025-10-02T22:19:58 IST" duration-ms="736">
+  <suite started-at="2025-10-15T21:36:46 IST" name="Default suite" finished-at="2025-10-15T21:36:47 IST" duration-ms="917">
     <groups>
       <group name="regression">
-        <method signature="CreateJobApiTest.createJobApiTest()[pri:0, instance:com.api.tests.CreateJobApiTest@4d5d943d]" name="createJobApiTest" class="com.api.tests.CreateJobApiTest"/>
+        <method signature="CreateJobApiDataDrivenTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@3febb011]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiDataDrivenTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="CreateJobApiTest.createJobApiTest()[pri:0, instance:com.api.tests.CreateJobApiTest@4d5d943d]" name="createJobApiTest" class="com.api.tests.CreateJobApiTest"/>
+        <method signature="CreateJobApiDataDrivenTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@3febb011]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiDataDrivenTest"/>
       </group> <!-- smoke -->
       <group name="api">
-        <method signature="CreateJobApiTest.createJobApiTest()[pri:0, instance:com.api.tests.CreateJobApiTest@4d5d943d]" name="createJobApiTest" class="com.api.tests.CreateJobApiTest"/>
+        <method signature="CreateJobApiDataDrivenTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@3febb011]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiDataDrivenTest"/>
       </group> <!-- api -->
     </groups>
-    <test started-at="2025-10-02T22:19:58 IST" name="Default test" finished-at="2025-10-02T22:19:58 IST" duration-ms="736">
-      <class name="com.api.tests.CreateJobApiTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.api.tests.CreateJobApiTest@4d5d943d]" started-at="2025-10-02T22:19:58 IST" name="setUp" description="Creating create job payload" finished-at="2025-10-02T22:19:58 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="createJobApiTest()[pri:0, instance:com.api.tests.CreateJobApiTest@4d5d943d]" started-at="2025-10-02T22:19:58 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" finished-at="2025-10-02T22:19:58 IST" duration-ms="720" status="PASS">
+    <test started-at="2025-10-15T21:36:46 IST" name="Default test" finished-at="2025-10-15T21:36:47 IST" duration-ms="917">
+      <class name="com.api.tests.datadriven.CreateJobApiDataDrivenTest">
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@3febb011]" started-at="2025-10-15T21:36:46 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobApiDataProvider" finished-at="2025-10-15T21:36:47 IST" duration-ms="858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=Rupesh, last_name=Yadav, mobile_number=9654074924, mobile_number_alt=, email_id=rupesh0101@hotmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=A, apartment_name=Aban, street_name=New Street, landmark=Freshco, area=MG Road, pincode=560068, country=India, state=Karnataka], customer_product=CustomerProduct[dop=2025-05-29T18:30:00.000Z, serial_number=105546237170117, imei1=105546237170117, imei2=105546237170117, popurl=2025-05-29T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=4, remark=test]]]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobApiTest -->
-      </class> <!-- com.api.tests.CreateJobApiTest -->
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@3febb011]" started-at="2025-10-15T21:36:46 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobApiDataProvider" finished-at="2025-10-15T21:36:47 IST" duration-ms="858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=Kajol, last_name=Yadav, mobile_number=9654074924, mobile_number_alt=, email_id=rupesh0101@hotmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=A, apartment_name=Nice, street_name=New Street, landmark=Freshco, area=MG Road, pincode=560068, country=India, state=Karnataka], customer_product=CustomerProduct[dop=2025-05-29T18:30:00.000Z, serial_number=105546237179917, imei1=105546237179917, imei2=105546237179917, popurl=2025-05-29T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=4, remark=test]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobApiTest -->
+      </class> <!-- com.api.tests.datadriven.CreateJobApiDataDrivenTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
