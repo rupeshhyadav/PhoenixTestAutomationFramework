@@ -1,7 +1,5 @@
 package com.api.utils;
 
-import org.apache.http.auth.UsernamePasswordCredentials;
-
 import com.api.request.model.LoginUserCredentials;
 import com.apj.constants.Role;
 

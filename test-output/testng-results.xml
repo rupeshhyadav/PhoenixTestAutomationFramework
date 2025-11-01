@@ -1,44 +1,276 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="6" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-15T21:36:46 IST" name="Default suite" finished-at="2025-10-15T21:36:47 IST" duration-ms="917">
+  <suite started-at="2025-11-01T17:20:33 IST" name="Default suite" finished-at="2025-11-01T17:20:34 IST" duration-ms="1375">
     <groups>
       <group name="regression">
-        <method signature="CreateJobApiDataDrivenTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@3febb011]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiDataDrivenTest"/>
+        <method signature="CreateJobApiDataDrivenFakerTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="CreateJobApiDataDrivenTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@3febb011]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiDataDrivenTest"/>
+        <method signature="CreateJobApiDataDrivenFakerTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest"/>
       </group> <!-- smoke -->
       <group name="api">
-        <method signature="CreateJobApiDataDrivenTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@3febb011]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiDataDrivenTest"/>
+        <method signature="CreateJobApiDataDrivenFakerTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest"/>
       </group> <!-- api -->
     </groups>
-    <test started-at="2025-10-15T21:36:46 IST" name="Default test" finished-at="2025-10-15T21:36:47 IST" duration-ms="917">
-      <class name="com.api.tests.datadriven.CreateJobApiDataDrivenTest">
-        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@3febb011]" started-at="2025-10-15T21:36:46 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobApiDataProvider" finished-at="2025-10-15T21:36:47 IST" duration-ms="858" status="PASS">
+    <test started-at="2025-11-01T17:20:33 IST" name="Default test" finished-at="2025-11-01T17:20:34 IST" duration-ms="1375">
+      <class name="com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest">
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T17:20:33 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T17:20:34 IST" duration-ms="1301" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=Rupesh, last_name=Yadav, mobile_number=9654074924, mobile_number_alt=, email_id=rupesh0101@hotmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=A, apartment_name=Aban, street_name=New Street, landmark=Freshco, area=MG Road, pincode=560068, country=India, state=Karnataka], customer_product=CustomerProduct[dop=2025-05-29T18:30:00.000Z, serial_number=105546237170117, imei1=105546237170117, imei2=105546237170117, popurl=2025-05-29T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=4, remark=test]]]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Bandhul, last_name=Shukla, mobile_number=7090667412, mobile_number_alt=7090667412, email_id=goutam.mishra@yahoo.co.in, email_id_alt=chapala.shukla@yahoo.co.in], customer_address=CustomerAddress[flat_number=546, apartment_name=Dhyaneshwar Station, street_name=Dhanadeepa Squares, landmark=Kocchar Corners, area=Panicker Lock, pincode=92428, country=INDIA, state=Daman and Diu], customer_product=CustomerProduct[dop=2025-10-22T11:50:33.199466Z, serial_number=3589687871768511, imei1=3589687871768511, imei2=3589687871768511, popurl=www.anurag-khatri.net, product_id=1, mst_model_id=1], problems=[Problems[id=9, remark=Sed omnis iusto qui voluptatem mollitia aut aliquam.]]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@3febb011]" started-at="2025-10-15T21:36:46 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobApiDataProvider" finished-at="2025-10-15T21:36:47 IST" duration-ms="858" status="PASS">
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T17:20:33 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T17:20:34 IST" duration-ms="1300" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=Kajol, last_name=Yadav, mobile_number=9654074924, mobile_number_alt=, email_id=rupesh0101@hotmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=A, apartment_name=Nice, street_name=New Street, landmark=Freshco, area=MG Road, pincode=560068, country=India, state=Karnataka], customer_product=CustomerProduct[dop=2025-05-29T18:30:00.000Z, serial_number=105546237179917, imei1=105546237179917, imei2=105546237179917, popurl=2025-05-29T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=4, remark=test]]]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Gautama, last_name=Mehrotra, mobile_number=7041653694, mobile_number_alt=7041653694, email_id=dinesh.asan@hotmail.com, email_id_alt=girish.achari@gmail.com], customer_address=CustomerAddress[flat_number=571, apartment_name=Rajinder Lakes, street_name=Prajapat Corners, landmark=Desai Ways, area=Kaniyar Landing, pincode=07011, country=INDIA, state=Bihar], customer_product=CustomerProduct[dop=2025-10-22T11:50:33.203922Z, serial_number=0306267958089736, imei1=0306267958089736, imei2=0306267958089736, popurl=www.jay-gandhi.name, product_id=1, mst_model_id=1], problems=[Problems[id=7, remark=Similique nam incidunt explicabo voluptatem quidem et ducimus in repellat.]]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobApiTest -->
-      </class> <!-- com.api.tests.datadriven.CreateJobApiDataDrivenTest -->
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T17:20:33 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T17:20:34 IST" duration-ms="1301" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Charuchandra, last_name=Tandon, mobile_number=7026005479, mobile_number_alt=7026005479, email_id=indira.shukla@gmail.com, email_id_alt=bhudev.chopra@hotmail.com], customer_address=CustomerAddress[flat_number=427, apartment_name=Sarisha Forges, street_name=Mishra Parks, landmark=Anasooya Drive, area=Patil Via, pincode=34930, country=INDIA, state=Bihar], customer_product=CustomerProduct[dop=2025-10-22T11:50:33.203526Z, serial_number=8745176554632582, imei1=8745176554632582, imei2=8745176554632582, popurl=www.sudeva-prajapat.in, product_id=1, mst_model_id=1], problems=[Problems[id=9, remark=Nihil qui alias molestias ab dolorem facere id repudiandae dolor.]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobApiTest -->
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T17:20:33 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T17:20:34 IST" duration-ms="1301" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Susheel, last_name=Kakkar, mobile_number=7056992906, mobile_number_alt=7056992906, email_id=subhasini.shukla@yahoo.co.in, email_id_alt=chiranjeev.dubashi@gmail.com], customer_address=CustomerAddress[flat_number=69158, apartment_name=Trivedi Manor, street_name=Gill Islands, landmark=Ekalavya Course, area=Achari Branch, pincode=73027, country=INDIA, state=Maharashtra], customer_product=CustomerProduct[dop=2025-10-22T11:50:33.202100Z, serial_number=7298055522924828, imei1=7298055522924828, imei2=7298055522924828, popurl=www.paramartha-dhawan.org, product_id=1, mst_model_id=1], problems=[Problems[id=5, remark=Officiis vitae voluptas sit qui porro explicabo cupiditate dolorem dignissimos.]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobApiTest -->
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T17:20:33 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T17:20:34 IST" duration-ms="1301" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Manikya, last_name=Abbott, mobile_number=7070971926, mobile_number_alt=7070971926, email_id=anilaabh.nair@yahoo.co.in, email_id_alt=gopal.namboothiri@yahoo.co.in], customer_address=CustomerAddress[flat_number=607, apartment_name=Kannan River, street_name=Aagney Parks, landmark=Chapala Harbor, area=Chaanakya Circle, pincode=93289, country=INDIA, state=West Bengal], customer_product=CustomerProduct[dop=2025-10-22T11:50:33.201532Z, serial_number=2476855757248762, imei1=2476855757248762, imei2=2476855757248762, popurl=www.bhadraksh-kapoor.in, product_id=1, mst_model_id=1], problems=[Problems[id=19, remark=Et qui consequatur et nostrum voluptatem.]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobApiTest -->
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T17:20:33 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T17:20:34 IST" duration-ms="1225" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Param, last_name=Bhattathiri, mobile_number=7084316285, mobile_number_alt=7084316285, email_id=chandan.kocchar@hotmail.com, email_id_alt=mohinder.saini@yahoo.co.in], customer_address=CustomerAddress[flat_number=59390, apartment_name=Pilla Forks, street_name=Anurag Point, landmark=Rita Viaduct, area=Siddarth Parkway, pincode=91747, country=INDIA, state=Punjab], customer_product=CustomerProduct[dop=2025-10-22T11:50:33.200077Z, serial_number=7456527685741919, imei1=7456527685741919, imei2=7456527685741919, popurl=www.prayag-ahuja.com, product_id=1, mst_model_id=1], problems=[Problems[id=21, remark=Deserunt facilis illo odio quis maxime molestias odit amet libero.]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest.createJobApiTest(CreateJobApiDataDrivenFakerTest.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobApiTest -->
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T17:20:33 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T17:20:34 IST" duration-ms="1225" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Goswami, last_name=Sinha, mobile_number=7051552375, mobile_number_alt=7051552375, email_id=satish.namboothiri@yahoo.co.in, email_id_alt=anjushri.guha@gmail.com], customer_address=CustomerAddress[flat_number=80348, apartment_name=Guha Port, street_name=Hiranmay Green, landmark=Aanandaswarup Manor, area=Marar Trace, pincode=11514, country=INDIA, state=Gujarat], customer_product=CustomerProduct[dop=2025-10-22T11:50:33.195086Z, serial_number=3384337084124121, imei1=3384337084124121, imei2=3384337084124121, popurl=www.gopal-kapoor.name, product_id=1, mst_model_id=1], problems=[Problems[id=13, remark=Enim ut sequi dolores sint suscipit.]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest.createJobApiTest(CreateJobApiDataDrivenFakerTest.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobApiTest -->
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T17:20:33 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T17:20:34 IST" duration-ms="1225" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Akshainie, last_name=Agarwal, mobile_number=7074956767, mobile_number_alt=7074956767, email_id=lakshmidhar.gill@gmail.com, email_id_alt=chandra.sinha@yahoo.co.in], customer_address=CustomerAddress[flat_number=53051, apartment_name=Pothuvaal Keys, street_name=Abbott Lane, landmark=Kapoor Throughway, area=Sushma Corner, pincode=65891, country=INDIA, state=Himachal Pradesh], customer_product=CustomerProduct[dop=2025-10-22T11:50:33.200940Z, serial_number=2731269449052828, imei1=2731269449052828, imei2=2731269449052828, popurl=www.tanushri-pilla.info, product_id=1, mst_model_id=1], problems=[Problems[id=13, remark=Maiores aut atque quo omnis consectetur eaque qui.]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest.createJobApiTest(CreateJobApiDataDrivenFakerTest.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobApiTest -->
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T17:20:33 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T17:20:34 IST" duration-ms="1225" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Bhoj, last_name=Chattopadhyay, mobile_number=7092223259, mobile_number_alt=7092223259, email_id=dinesh.kakkar@gmail.com, email_id_alt=girija.pillai@yahoo.co.in], customer_address=CustomerAddress[flat_number=300, apartment_name=Indira Port, street_name=Bhat Stream, landmark=Lila Springs, area=Kumuda Greens, pincode=66162, country=INDIA, state=Arunachal Pradesh], customer_product=CustomerProduct[dop=2025-10-22T11:50:33.203115Z, serial_number=3455213690361490, imei1=3455213690361490, imei2=3455213690361490, popurl=www.brahmdev-varma.in, product_id=1, mst_model_id=1], problems=[Problems[id=14, remark=Quo dolore fugit omnis minima corporis alias eos amet quis.]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest.createJobApiTest(CreateJobApiDataDrivenFakerTest.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobApiTest -->
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T17:20:33 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T17:20:34 IST" duration-ms="1300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Tanushree, last_name=Arora, mobile_number=7062624712, mobile_number_alt=7062624712, email_id=sher.talwar@hotmail.com, email_id_alt=kumari.guneta@hotmail.com], customer_address=CustomerAddress[flat_number=165, apartment_name=Trilochana Crescent, street_name=Sushma Manors, landmark=Rageshwari Lights, area=Khatri Dale, pincode=15746, country=INDIA, state=Arunachal Pradesh], customer_product=CustomerProduct[dop=2025-10-22T11:50:33.202649Z, serial_number=8069722563206727, imei1=8069722563206727, imei2=8069722563206727, popurl=www.aashritha-trivedi.com, product_id=1, mst_model_id=1], problems=[Problems[id=6, remark=Repellat voluptatum sunt neque harum impedit alias est dolor.]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobApiTest -->
+      </class> <!-- com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -36,5 +36,69 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/rupeshyadav/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar" sourcepath="/Users/rupeshyadav/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.github.javafaker"/>
+			<attribute name="maven.artifactId" value="javafaker"/>
+			<attribute name="maven.version" value="1.0.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/rupeshyadav/.m2/repository/com/opencsv/opencsv/5.12.0/opencsv-5.12.0.jar" sourcepath="/Users/rupeshyadav/.m2/repository/com/opencsv/opencsv/5.12.0/opencsv-5.12.0-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.opencsv"/>
+			<attribute name="maven.artifactId" value="opencsv"/>
+			<attribute name="maven.version" value="5.12.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/rupeshyadav/.m2/repository/io/rest-assured/rest-assured/5.5.6/rest-assured-5.5.6.jar" sourcepath="/Users/rupeshyadav/.m2/repository/io/rest-assured/rest-assured/5.5.6/rest-assured-5.5.6-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="io.rest-assured"/>
+			<attribute name="maven.artifactId" value="rest-assured"/>
+			<attribute name="maven.version" value="5.5.6"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/rupeshyadav/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar" sourcepath="/Users/rupeshyadav/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.groupId" value="org.testng"/>
+			<attribute name="maven.artifactId" value="testng"/>
+			<attribute name="maven.version" value="7.11.0"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/rupeshyadav/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar" sourcepath="/Users/rupeshyadav/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.apache.httpcomponents"/>
+			<attribute name="maven.artifactId" value="httpclient"/>
+			<attribute name="maven.version" value="4.5.13"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/rupeshyadav/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar" sourcepath="/Users/rupeshyadav/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.hamcrest"/>
+			<attribute name="maven.artifactId" value="hamcrest"/>
+			<attribute name="maven.version" value="2.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/rupeshyadav/.m2/repository/io/rest-assured/json-schema-validator/5.5.6/json-schema-validator-5.5.6.jar" sourcepath="/Users/rupeshyadav/.m2/repository/io/rest-assured/json-schema-validator/5.5.6/json-schema-validator-5.5.6-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="io.rest-assured"/>
+			<attribute name="maven.artifactId" value="json-schema-validator"/>
+			<attribute name="maven.version" value="5.5.6"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
