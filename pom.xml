@@ -15,7 +15,7 @@
 				<version>3.5.4</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testNg.xml</suiteXmlFile>
+						<suiteXmlFile>testNg-datadriven.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
