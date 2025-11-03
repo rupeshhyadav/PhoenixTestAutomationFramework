@@ -1,132 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-01T20:39:23 IST" name="Default suite" finished-at="2025-11-01T20:39:24 IST" duration-ms="1230">
+  <suite started-at="2025-11-03T18:47:50 IST" name="Default suite" finished-at="2025-11-03T18:47:51 IST" duration-ms="745">
     <groups>
       <group name="regression">
-        <method signature="CreateJobApiDataDrivenFakerTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest"/>
+        <method signature="LoginApiJsonDataDrivenTest.loginApiTest(com.api.request.model.LoginUserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginApiJsonDataDrivenTest@7f0eb4b4]" name="loginApiTest" class="com.api.tests.datadriven.LoginApiJsonDataDrivenTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="CreateJobApiDataDrivenFakerTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest"/>
+        <method signature="LoginApiJsonDataDrivenTest.loginApiTest(com.api.request.model.LoginUserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginApiJsonDataDrivenTest@7f0eb4b4]" name="loginApiTest" class="com.api.tests.datadriven.LoginApiJsonDataDrivenTest"/>
       </group> <!-- smoke -->
       <group name="api">
-        <method signature="CreateJobApiDataDrivenFakerTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest"/>
+        <method signature="LoginApiJsonDataDrivenTest.loginApiTest(com.api.request.model.LoginUserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginApiJsonDataDrivenTest@7f0eb4b4]" name="loginApiTest" class="com.api.tests.datadriven.LoginApiJsonDataDrivenTest"/>
       </group> <!-- api -->
     </groups>
-    <test started-at="2025-11-01T20:39:23 IST" name="Default test" finished-at="2025-11-01T20:39:24 IST" duration-ms="1230">
-      <class name="com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest">
-        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T20:39:23 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T20:39:24 IST" duration-ms="1157" status="PASS">
+    <test started-at="2025-11-03T18:47:50 IST" name="Default test" finished-at="2025-11-03T18:47:51 IST" duration-ms="745">
+      <class name="com.api.tests.datadriven.LoginApiJsonDataDrivenTest">
+        <test-method signature="loginApiTest(com.api.request.model.LoginUserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginApiJsonDataDrivenTest@7f0eb4b4]" started-at="2025-11-03T18:47:50 IST" name="loginApiTest" description="Verifying if login API is working for FD user" data-provider="loginApiJsonDataProvider" finished-at="2025-11-03T18:47:51 IST" duration-ms="659" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Suma, last_name=Khan, mobile_number=7049241369, mobile_number_alt=7049241369, email_id=som.kaniyar@gmail.com, email_id_alt=shantanu.bhattacharya@yahoo.co.in], customer_address=CustomerAddress[flat_number=78990, apartment_name=Sinha Street, street_name=Mukhopadhyay Crescent, landmark=Sarla Views, area=Khatri Union, pincode=12037, country=INDIA, state=Dadar and Nagar Haveli], customer_product=CustomerProduct[dop=2025-10-22T15:09:23.080207Z, serial_number=0649066834962336, imei1=0649066834962336, imei2=0649066834962336, popurl=www.bilva-guha.net, product_id=1, mst_model_id=1], problems=[Problems[id=20, remark=Voluptas provident blanditiis illo ut dolorem autem qui nam.], Problems[id=16, remark=Ducimus alias aut repellat enim.]]]]]>
+                <![CDATA[LoginUserCredentials[username=iamfd, password=password]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T20:39:23 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T20:39:24 IST" duration-ms="1158" status="PASS">
+        </test-method> <!-- loginApiTest -->
+        <test-method signature="loginApiTest(com.api.request.model.LoginUserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginApiJsonDataDrivenTest@7f0eb4b4]" started-at="2025-11-03T18:47:50 IST" name="loginApiTest" description="Verifying if login API is working for FD user" data-provider="loginApiJsonDataProvider" finished-at="2025-11-03T18:47:51 IST" duration-ms="659" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Krishnadasa, last_name=Butt, mobile_number=7085496716, mobile_number_alt=7085496716, email_id=adwitiya.nehru@hotmail.com, email_id_alt=rajan.asan@gmail.com], customer_address=CustomerAddress[flat_number=170, apartment_name=Eshana Curve, street_name=Charumati Glens, landmark=Dutta Pines, area=Vasanti Bridge, pincode=84739, country=INDIA, state=Gujarat], customer_product=CustomerProduct[dop=2025-10-22T15:09:23.078024Z, serial_number=9876327487017913, imei1=9876327487017913, imei2=9876327487017913, popurl=www.trisha-mahajan.name, product_id=1, mst_model_id=1], problems=[Problems[id=15, remark=Dolorem eum nihil laboriosam saepe tempora rem cum accusamus debitis.], Problems[id=11, remark=Exercitationem quia et deleniti est possimus sit repellendus.]]]]]>
+                <![CDATA[LoginUserCredentials[username=iamsup, password=password]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T20:39:23 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T20:39:24 IST" duration-ms="1160" status="PASS">
+        </test-method> <!-- loginApiTest -->
+        <test-method signature="loginApiTest(com.api.request.model.LoginUserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginApiJsonDataDrivenTest@7f0eb4b4]" started-at="2025-11-03T18:47:50 IST" name="loginApiTest" description="Verifying if login API is working for FD user" data-provider="loginApiJsonDataProvider" finished-at="2025-11-03T18:47:51 IST" duration-ms="659" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Atmanand, last_name=Pilla, mobile_number=7018773505, mobile_number_alt=7018773505, email_id=aadidev.kapoor@gmail.com, email_id_alt=ekaparnika.guneta@gmail.com], customer_address=CustomerAddress[flat_number=35149, apartment_name=Sinha Junctions, street_name=Iyer Estates, landmark=Jha Curve, area=Chattopadhyay Spurs, pincode=21740, country=INDIA, state=Rajasthan], customer_product=CustomerProduct[dop=2025-10-22T15:09:23.079392Z, serial_number=5598710618111588, imei1=5598710618111588, imei2=5598710618111588, popurl=www.aatreya-deshpande.co.in, product_id=1, mst_model_id=1], problems=[Problems[id=28, remark=Recusandae exercitationem eum iusto aut.], Problems[id=1, remark=Et molestias deserunt tenetur accusantium ipsam fugiat et eum nam.], Problems[id=11, remark=Voluptatum qui quo nisi tenetur delectus.]]]]]>
+                <![CDATA[LoginUserCredentials[username=iameng, password=password]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T20:39:23 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T20:39:24 IST" duration-ms="1157" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ujjwal, last_name=Iyer, mobile_number=7011545062, mobile_number_alt=7011545062, email_id=jyoti.malik@hotmail.com, email_id_alt=digambara.bandopadhyay@yahoo.co.in], customer_address=CustomerAddress[flat_number=9924, apartment_name=Ahuja Flats, street_name=Bharadwaj Shores, landmark=Bhagavaan Lodge, area=Talwar Brooks, pincode=77338, country=INDIA, state=Tamil Nadu], customer_product=CustomerProduct[dop=2025-10-22T15:09:23.080621Z, serial_number=6892258555615824, imei1=6892258555615824, imei2=6892258555615824, popurl=www.aaditya-abbott.com, product_id=1, mst_model_id=1], problems=[Problems[id=6, remark=Sint velit dignissimos laudantium omnis doloremque occaecati quis necessitatibus velit.], Problems[id=28, remark=In aut molestias hic occaecati qui repudiandae voluptatibus.], Problems[id=10, remark=Aliquam alias itaque aperiam ut laboriosam nesciunt ut.]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T20:39:23 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T20:39:24 IST" duration-ms="1157" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Datta, last_name=Kocchar, mobile_number=7025441793, mobile_number_alt=7025441793, email_id=budhil.sethi@hotmail.com, email_id_alt=mandakini.saini@gmail.com], customer_address=CustomerAddress[flat_number=88404, apartment_name=Devesh Tunnel, street_name=Dhananjay Expressway, landmark=Bhamini Plain, area=Chopra Key, pincode=99472, country=INDIA, state=Tamil Nadu], customer_product=CustomerProduct[dop=2025-10-22T15:09:23.076463Z, serial_number=7146374724508560, imei1=7146374724508560, imei2=7146374724508560, popurl=www.gayatri-singh.in, product_id=1, mst_model_id=1], problems=[Problems[id=22, remark=Et ut iste alias repellat reiciendis.], Problems[id=27, remark=Possimus sint maxime dignissimos minima et consectetur illum.], Problems[id=22, remark=Explicabo tempora natus architecto totam optio autem ipsam voluptatem.]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T20:39:23 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T20:39:24 IST" duration-ms="1160" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Ujjwal, last_name=Ahluwalia, mobile_number=7063588765, mobile_number_alt=7063588765, email_id=sanjay.adiga@yahoo.co.in, email_id_alt=satyen.pandey@hotmail.com], customer_address=CustomerAddress[flat_number=98375, apartment_name=Dhawan Cliff, street_name=Bhattacharya Run, landmark=Chandani Circle, area=Rahul Mills, pincode=10507, country=INDIA, state=Manipur], customer_product=CustomerProduct[dop=2025-10-22T15:09:23.078999Z, serial_number=0727095909524920, imei1=0727095909524920, imei2=0727095909524920, popurl=www.devajyoti-varrier.name, product_id=1, mst_model_id=1], problems=[Problems[id=11, remark=Officiis dolore recusandae dolor quaerat praesentium consequatur amet et consequatur.]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T20:39:23 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T20:39:24 IST" duration-ms="1159" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Triloki Nath, last_name=Bhattathiri, mobile_number=7046779750, mobile_number_alt=7046779750, email_id=vimala.varma@yahoo.co.in, email_id_alt=umang.johar@gmail.com], customer_address=CustomerAddress[flat_number=589, apartment_name=Anala Springs, street_name=Gorakhanatha Village, landmark=Naik Lodge, area=Banerjee Ports, pincode=47268, country=INDIA, state=Delhi], customer_product=CustomerProduct[dop=2025-10-22T15:09:23.077293Z, serial_number=2555665195659491, imei1=2555665195659491, imei2=2555665195659491, popurl=www.saraswati-mahajan.co.in, product_id=1, mst_model_id=1], problems=[Problems[id=11, remark=Corrupti sapiente eaque id voluptas assumenda veniam eum.], Problems[id=12, remark=Impedit repudiandae quidem et eos et et in.], Problems[id=29, remark=Dolorem expedita aut incidunt non omnis nihil.]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T20:39:23 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T20:39:24 IST" duration-ms="1159" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Brajesh, last_name=Banerjee, mobile_number=7040255956, mobile_number_alt=7040255956, email_id=vrund.pandey@gmail.com, email_id_alt=dhaanyalakshmi.guha@gmail.com], customer_address=CustomerAddress[flat_number=7767, apartment_name=Ekaaksh Inlet, street_name=Aalok Cape, landmark=Vyas Ridge, area=Iyengar Knoll, pincode=30300, country=INDIA, state=Jharkhand], customer_product=CustomerProduct[dop=2025-10-22T15:09:23.078527Z, serial_number=9262674642617351, imei1=9262674642617351, imei2=9262674642617351, popurl=www.adikavi-kapoor.name, product_id=1, mst_model_id=1], problems=[Problems[id=1, remark=Harum sed doloribus illum autem ut qui qui.], Problems[id=17, remark=Qui pariatur et ut ratione inventore.], Problems[id=20, remark=Inventore quam inventore suscipit non vel ipsum voluptatibus totam.]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T20:39:23 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T20:39:24 IST" duration-ms="1159" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Shubhaprada, last_name=Varma, mobile_number=7083212596, mobile_number_alt=7083212596, email_id=bhudeva.achari@gmail.com, email_id_alt=budhil.gill@gmail.com], customer_address=CustomerAddress[flat_number=9692, apartment_name=Ganapati Union, street_name=Kocchar Pike, landmark=Anang Trace, area=Khanna Track, pincode=37754, country=INDIA, state=Gujarat], customer_product=CustomerProduct[dop=2025-10-22T15:09:23.072233Z, serial_number=1892921641528510, imei1=1892921641528510, imei2=1892921641528510, popurl=www.vasudha-pillai.in, product_id=1, mst_model_id=1], problems=[Problems[id=3, remark=Ullam in velit dolore quos ut quia magnam suscipit.], Problems[id=8, remark=Temporibus esse at molestiae deleniti autem aut vel temporibus.]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest@7f0eb4b4]" started-at="2025-11-01T20:39:23 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobFakeDataProvider" finished-at="2025-11-01T20:39:24 IST" duration-ms="1161" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Divya, last_name=Achari, mobile_number=7047073198, mobile_number_alt=7047073198, email_id=chandravati.kaul@hotmail.com, email_id_alt=kumuda.mahajan@hotmail.com], customer_address=CustomerAddress[flat_number=6447, apartment_name=Nambeesan Radial, street_name=Malti Rue, landmark=Guha Parkway, area=Karthik Squares, pincode=26280, country=INDIA, state=Rajasthan], customer_product=CustomerProduct[dop=2025-10-22T15:09:23.079805Z, serial_number=4239546088687101, imei1=4239546088687101, imei2=4239546088687101, popurl=www.minakshi-pandey.in, product_id=1, mst_model_id=1], problems=[Problems[id=12, remark=Tempore voluptatum optio sed exercitationem sit ea et totam.], Problems[id=2, remark=Eos iste et vel nostrum.], Problems[id=15, remark=Sint nostrum distinctio ad libero tempore.]]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createJobApiTest -->
-      </class> <!-- com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest -->
+        </test-method> <!-- loginApiTest -->
+      </class> <!-- com.api.tests.datadriven.LoginApiJsonDataDrivenTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

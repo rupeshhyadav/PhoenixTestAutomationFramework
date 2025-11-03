@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest">
+      <class name="com.api.tests.datadriven.LoginApiJsonDataDrivenTest">
         <methods>
-          <include name="createJobApiTest" invocation-numbers="0 2 3 7"/>
+          <include name="loginApiTest"/>
         </methods>
-      </class> <!-- com.api.tests.datadriven.CreateJobApiDataDrivenFakerTest -->
+      </class> <!-- com.api.tests.datadriven.LoginApiJsonDataDrivenTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
