@@ -1,0 +1,82 @@
+[
+	
+	{
+	  "mst_service_location_id": 0,
+	  "mst_platform_id": 2,
+	  "mst_warrenty_status_id": 1,
+	  "mst_oem_id": 2,
+	  "customer": {
+	    "first_name": "Rupesh",
+	    "last_name": "Yadav",
+	    "mobile_number": "9654074924",
+	    "mobile_number_alt": "",
+	    "email_id": "rupesh0101@hotmail.com",
+	    "email_id_alt": ""
+	  },
+	  "customer_address": {
+	    "flat_number": "A",
+	    "apartment_name": "Aban",
+	    "street_name": "New Street",
+	    "landmark": "Freshco",
+	    "area": "MG Road",
+	    "pincode": "560068",
+	    "country": "India",
+	    "state": "Karnataka"
+	  },
+	  "customer_product": {
+	    "dop": "2025-05-29T18:30:00.000Z",
+	    "serial_number": "101654920168626",
+	    "imei1": "101656920168626",
+	    "imei2": "101656920168626",
+	    "popurl": "2025-05-29T18:30:00.000Z",
+	    "product_id": 3,
+	    "mst_model_id": 3
+	  },
+	  "problems": [
+	    {
+	      "id": 4,
+	      "remark": "test"
+	    }
+	  ]
+	},
+	{
+	  "mst_service_location_id": 0,
+	  "mst_platform_id": 2,
+	  "mst_warrenty_status_id": 1,
+	  "mst_oem_id": 2,
+	  "customer": {
+	    "first_name": "Kajol",
+	    "last_name": "Yadav",
+	    "mobile_number": "9654074924",
+	    "mobile_number_alt": "",
+	    "email_id": "rupesh0101@hotmail.com",
+	    "email_id_alt": ""
+	  },
+	  "customer_address": {
+	    "flat_number": "A",
+	    "apartment_name": "Aban",
+	    "street_name": "New Street",
+	    "landmark": "Freshco",
+	    "area": "MG Road",
+	    "pincode": "560068",
+	    "country": "India",
+	    "state": "Karnataka"
+	  },
+	  "customer_product": {
+	    "dop": "2025-05-29T18:30:00.000Z",
+	    "serial_number": "101654920168626",
+	    "imei1": "101654920100626",
+	    "imei2": "101654920100626",
+	    "popurl": "2025-05-29T18:30:00.000Z",
+	    "product_id": 3,
+	    "mst_model_id": 3
+	  },
+	  "problems": [
+	    {
+	      "id": 4,
+	      "remark": "test"
+	    }
+	  ]
+	}
+	
+]
