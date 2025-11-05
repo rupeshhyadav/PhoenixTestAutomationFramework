@@ -45,7 +45,7 @@ public class ExcelReaderUtil {
 		XSSFRow myrow;
 		List<LoginUserCredentials> userList = new ArrayList<LoginUserCredentials>();
 
-		for (int i = 0; i <= lastRowIndex; i++) {
+		for (int i = 1; i <= lastRowIndex; i++) {
 			myrow = mysheet.getRow(i);
 			LoginUserCredentials loginUserCredentials = new LoginUserCredentials(
 					myrow.getCell(userNameIndex).toString(), myrow.getCell(passwordIndex).toString());
