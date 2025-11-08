@@ -9,11 +9,11 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">3,558</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">4,013</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.api.tests.datadriven.LoginApiExcelDataDrivenTest</td><td><a href="#m0">loginApiTest</a></td><td rowspan="2">1762362905438</td><td rowspan="2">2145</td></tr><tr class="failedeven"><td><a href="#m1">loginApiTest</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.api.tests.datadriven.LoginApiExcelDataDrivenTest</td><td><a href="#m2">loginApiTest</a></td><td rowspan="1">1762362905438</td><td rowspan="1">3003</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest</td><td><a href="#m0">createJobApiTest</a></td><td rowspan="2">1762623623778</td><td rowspan="2">3139</td></tr><tr class="failedeven"><td><a href="#m1">createJobApiTest</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.api.tests.datadriven.LoginApiExcelDataDrivenTest#loginApiTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>LoginUserCredentials[username=imsup, password=password]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+<h2>Default test</h2><h3 id="m0">com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest#createJobApiTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=Rupesh, last_name=Yadav, mobile_number=9654074924, mobile_number_alt=null, email_id=rupesh0101@hotmail.com, email_id_alt=null], customer_address=CustomerAddress[flat_number=A, apartment_name=Aban, street_name=New Street, landmark=Freshco, area=MG Road, pincode=560068, country=India, state=Karnataka], customer_product=CustomerProduct[dop=2025-05-29T18:30:00.000Z, serial_number=1.05522E+14, imei1=1.05522E+14, imei2=1.05522E+14, popurl=2025-05-29T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=4, remark=test]]]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;500&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -27,13 +27,13 @@ Expected status code &lt;200&gt; but was &lt;500&gt;.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$7.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
 	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
-	at com.api.tests.datadriven.LoginApiExcelDataDrivenTest.loginApiTest(LoginApiExcelDataDrivenTest.java:24)
+	at com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest.createJobApiTest(CreateJobApiExcelDataDrivenTest.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -47,7 +47,7 @@ Expected status code &lt;200&gt; but was &lt;500&gt;.
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.api.tests.datadriven.LoginApiExcelDataDrivenTest#loginApiTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>LoginUserCredentials[username=imeng, password=password]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+<h3 id="m1">com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest#createJobApiTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=Kajol, last_name=Yadav, mobile_number=9654074924, mobile_number_alt=null, email_id=rupesh0101@hotmail.com, email_id_alt=null], customer_address=CustomerAddress[flat_number=A, apartment_name=Nice, street_name=New Street, landmark=Freshco, area=MG Road, pincode=560068, country=India, state=Karnataka], customer_product=CustomerProduct[dop=2025-05-29T18:30:00.000Z, serial_number=1.05522E+14, imei1=1.05522E+14, imei2=1.05522E+14, popurl=2025-05-29T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=4, remark=test]]]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;500&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -61,13 +61,10 @@ Expected status code &lt;200&gt; but was &lt;500&gt;.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$7.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
-	at com.api.tests.datadriven.LoginApiExcelDataDrivenTest.loginApiTest(LoginApiExcelDataDrivenTest.java:24)
+	at com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest.createJobApiTest(CreateJobApiExcelDataDrivenTest.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,6 +78,5 @@ Expected status code &lt;200&gt; but was &lt;500&gt;.
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.api.tests.datadriven.LoginApiExcelDataDrivenTest#loginApiTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>LoginUserCredentials[username=iamfd, password=password]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

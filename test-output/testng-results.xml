@@ -1,37 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-05T22:45:04 IST" name="Default suite" finished-at="2025-11-05T22:45:08 IST" duration-ms="3558">
+  <suite started-at="2025-11-08T23:10:22 IST" name="Default suite" finished-at="2025-11-08T23:10:26 IST" duration-ms="4013">
     <groups>
       <group name="regression">
-        <method signature="LoginApiExcelDataDrivenTest.loginApiTest(com.api.request.model.LoginUserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginApiExcelDataDrivenTest@619713e5]" name="loginApiTest" class="com.api.tests.datadriven.LoginApiExcelDataDrivenTest"/>
+        <method signature="CreateJobApiExcelDataDrivenTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest@2ef3eef9]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="LoginApiExcelDataDrivenTest.loginApiTest(com.api.request.model.LoginUserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginApiExcelDataDrivenTest@619713e5]" name="loginApiTest" class="com.api.tests.datadriven.LoginApiExcelDataDrivenTest"/>
+        <method signature="CreateJobApiExcelDataDrivenTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest@2ef3eef9]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest"/>
       </group> <!-- smoke -->
       <group name="api">
-        <method signature="LoginApiExcelDataDrivenTest.loginApiTest(com.api.request.model.LoginUserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginApiExcelDataDrivenTest@619713e5]" name="loginApiTest" class="com.api.tests.datadriven.LoginApiExcelDataDrivenTest"/>
+        <method signature="CreateJobApiExcelDataDrivenTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest@2ef3eef9]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest"/>
       </group> <!-- api -->
     </groups>
-    <test started-at="2025-11-05T22:45:04 IST" name="Default test" finished-at="2025-11-05T22:45:08 IST" duration-ms="3558">
-      <class name="com.api.tests.datadriven.LoginApiExcelDataDrivenTest">
-        <test-method signature="loginApiTest(com.api.request.model.LoginUserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginApiExcelDataDrivenTest@619713e5]" started-at="2025-11-05T22:45:05 IST" name="loginApiTest" description="Verifying if login API is working for FD user" data-provider="loginAPiExcelDataProvider" finished-at="2025-11-05T22:45:08 IST" duration-ms="3003" status="PASS">
+    <test started-at="2025-11-08T23:10:22 IST" name="Default test" finished-at="2025-11-08T23:10:26 IST" duration-ms="4013">
+      <class name="com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest">
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest@2ef3eef9]" started-at="2025-11-08T23:10:23 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobApiExcelDataProvider" finished-at="2025-11-08T23:10:26 IST" duration-ms="3139" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[LoginUserCredentials[username=iamfd, password=password]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginApiTest -->
-        <test-method signature="loginApiTest(com.api.request.model.LoginUserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginApiExcelDataDrivenTest@619713e5]" started-at="2025-11-05T22:45:05 IST" name="loginApiTest" description="Verifying if login API is working for FD user" data-provider="loginAPiExcelDataProvider" finished-at="2025-11-05T22:45:07 IST" duration-ms="2145" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[LoginUserCredentials[username=imsup, password=password]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=Rupesh, last_name=Yadav, mobile_number=9654074924, mobile_number_alt=null, email_id=rupesh0101@hotmail.com, email_id_alt=null], customer_address=CustomerAddress[flat_number=A, apartment_name=Aban, street_name=New Street, landmark=Freshco, area=MG Road, pincode=560068, country=India, state=Karnataka], customer_product=CustomerProduct[dop=2025-05-29T18:30:00.000Z, serial_number=1.05522E+14, imei1=1.05522E+14, imei2=1.05522E+14, popurl=2025-05-29T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=4, remark=test]]]]]>
               </value>
             </param>
           </params>
@@ -56,13 +45,13 @@ at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(Cal
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$7.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
 at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
 at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
 at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
-at com.api.tests.datadriven.LoginApiExcelDataDrivenTest.loginApiTest(LoginApiExcelDataDrivenTest.java:24)
+at com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest.createJobApiTest(CreateJobApiExcelDataDrivenTest.java:40)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -80,12 +69,12 @@ at java.base/java.lang.Thread.run(Thread.java:831)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginApiTest -->
-        <test-method signature="loginApiTest(com.api.request.model.LoginUserCredentials)[pri:0, instance:com.api.tests.datadriven.LoginApiExcelDataDrivenTest@619713e5]" started-at="2025-11-05T22:45:05 IST" name="loginApiTest" description="Verifying if login API is working for FD user" data-provider="loginAPiExcelDataProvider" finished-at="2025-11-05T22:45:07 IST" duration-ms="2145" status="FAIL">
+        </test-method> <!-- createJobApiTest -->
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest@2ef3eef9]" started-at="2025-11-08T23:10:23 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobApiExcelDataProvider" finished-at="2025-11-08T23:10:26 IST" duration-ms="3139" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[LoginUserCredentials[username=imeng, password=password]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=Kajol, last_name=Yadav, mobile_number=9654074924, mobile_number_alt=null, email_id=rupesh0101@hotmail.com, email_id_alt=null], customer_address=CustomerAddress[flat_number=A, apartment_name=Nice, street_name=New Street, landmark=Freshco, area=MG Road, pincode=560068, country=India, state=Karnataka], customer_product=CustomerProduct[dop=2025-05-29T18:30:00.000Z, serial_number=1.05522E+14, imei1=1.05522E+14, imei2=1.05522E+14, popurl=2025-05-29T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=4, remark=test]]]]]>
               </value>
             </param>
           </params>
@@ -110,13 +99,10 @@ at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(Cal
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$7.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
 at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
-at com.api.tests.datadriven.LoginApiExcelDataDrivenTest.loginApiTest(LoginApiExcelDataDrivenTest.java:24)
+at com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest.createJobApiTest(CreateJobApiExcelDataDrivenTest.java:40)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -134,8 +120,8 @@ at java.base/java.lang.Thread.run(Thread.java:831)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginApiTest -->
-      </class> <!-- com.api.tests.datadriven.LoginApiExcelDataDrivenTest -->
+        </test-method> <!-- createJobApiTest -->
+      </class> <!-- com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
