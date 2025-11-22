@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="5" passed="0" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-08T23:10:22 IST" name="Default suite" finished-at="2025-11-08T23:10:26 IST" duration-ms="4013">
+  <suite started-at="2025-11-22T20:47:24 IST" name="Default suite" finished-at="2025-11-22T20:47:28 IST" duration-ms="4772">
     <groups>
       <group name="regression">
-        <method signature="CreateJobApiExcelDataDrivenTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest@2ef3eef9]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest"/>
+        <method signature="CreateJobApiDataDrivenTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@1ea9f6af]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiDataDrivenTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="CreateJobApiExcelDataDrivenTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest@2ef3eef9]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest"/>
+        <method signature="CreateJobApiDataDrivenTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@1ea9f6af]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiDataDrivenTest"/>
       </group> <!-- smoke -->
       <group name="api">
-        <method signature="CreateJobApiExcelDataDrivenTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest@2ef3eef9]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest"/>
+        <method signature="CreateJobApiDataDrivenTest.createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@1ea9f6af]" name="createJobApiTest" class="com.api.tests.datadriven.CreateJobApiDataDrivenTest"/>
       </group> <!-- api -->
     </groups>
-    <test started-at="2025-11-08T23:10:22 IST" name="Default test" finished-at="2025-11-08T23:10:26 IST" duration-ms="4013">
-      <class name="com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest">
-        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest@2ef3eef9]" started-at="2025-11-08T23:10:23 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobApiExcelDataProvider" finished-at="2025-11-08T23:10:26 IST" duration-ms="3139" status="FAIL">
+    <test started-at="2025-11-22T20:47:24 IST" name="Default test" finished-at="2025-11-22T20:47:28 IST" duration-ms="4772">
+      <class name="com.api.tests.datadriven.CreateJobApiDataDrivenTest">
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@1ea9f6af]" started-at="2025-11-22T20:47:24 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobApiDBDataProvider" finished-at="2025-11-22T20:47:28 IST" duration-ms="4140" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=Rupesh, last_name=Yadav, mobile_number=9654074924, mobile_number_alt=null, email_id=rupesh0101@hotmail.com, email_id_alt=null], customer_address=CustomerAddress[flat_number=A, apartment_name=Aban, street_name=New Street, landmark=Freshco, area=MG Road, pincode=560068, country=India, state=Karnataka], customer_product=CustomerProduct[dop=2025-05-29T18:30:00.000Z, serial_number=1.05522E+14, imei1=1.05522E+14, imei2=1.05522E+14, popurl=2025-05-29T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=4, remark=test]]]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=1, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Wasis, last_name=Siddique, mobile_number=8240967632, mobile_number_alt=, email_id=somokmukherjee58@gmail.com, email_id_alt=somokmukherjee58@gmail.com], customer_address=CustomerAddress[flat_number=67, apartment_name=BBC, street_name=58/3 Biren Roy Road (West), Suite, landmark=Oppo, area=Barisha, pincode=700008, country=India, state=West Bengal], customer_product=CustomerProduct[dop=2025-10-01, serial_number=95849393938392933, imei1=95849393938392933, imei2=95849393938392933, popurl=2025-10-01T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=2, remark=Replaced Battery]]]]]>
               </value>
             </param>
           </params>
@@ -45,13 +45,115 @@ at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(Cal
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$11.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobApiDataDrivenTest.createJobApiTest(CreateJobApiDataDrivenTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobApiTest -->
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@1ea9f6af]" started-at="2025-11-22T20:47:24 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobApiDBDataProvider" finished-at="2025-11-22T20:47:28 IST" duration-ms="4140" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=1, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Arlie, last_name=Anderson, mobile_number=663-279-7542, mobile_number_alt=, email_id=Okey_Bernier32@yahoo.com, email_id_alt=], customer_address=CustomerAddress[flat_number=c306, apartment_name=gurukrupa colony, street_name=Street 2, landmark=Pune Railway station, area=Patil Road, pincode=416416, country=India, state=Maharashtra], customer_product=CustomerProduct[dop=2025-09-30, serial_number=16647507768029, imei1=16647507768029, imei2=16647507768029, popurl=2025-09-30T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=1, remark=Smartphone Battery Issue]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$11.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobApiDataDrivenTest.createJobApiTest(CreateJobApiDataDrivenTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobApiTest -->
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@1ea9f6af]" started-at="2025-11-22T20:47:24 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobApiDBDataProvider" finished-at="2025-11-22T20:47:28 IST" duration-ms="4140" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=1, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Roy, last_name=Wisoky, mobile_number=350-704-6470, mobile_number_alt=, email_id=Rocio_Zboncak@gmail.com, email_id_alt=], customer_address=CustomerAddress[flat_number=c 304, apartment_name=Jupiter, street_name=MG road, landmark=Bangur Nagar, area=Goregaon West, pincode=411039, country=India, state=Maharashtra], customer_product=CustomerProduct[dop=2025-04-06, serial_number=13643535561513, imei1=13643535561513, imei2=13643535561513, popurl=2025-04-06T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=1, remark=Battery Issue]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$11.call(Unknown Source)
 at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
 at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
 at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
-at com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest.createJobApiTest(CreateJobApiExcelDataDrivenTest.java:40)
+at com.api.tests.datadriven.CreateJobApiDataDrivenTest.createJobApiTest(CreateJobApiDataDrivenTest.java:40)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -70,11 +172,11 @@ at java.base/java.lang.Thread.run(Thread.java:831)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobApiTest -->
-        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest@2ef3eef9]" started-at="2025-11-08T23:10:23 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobApiExcelDataProvider" finished-at="2025-11-08T23:10:26 IST" duration-ms="3139" status="FAIL">
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@1ea9f6af]" started-at="2025-11-22T20:47:24 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobApiDBDataProvider" finished-at="2025-11-22T20:47:28 IST" duration-ms="4140" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CreateJobPayload[mst_service_location_id=0, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=2, customer=Customer[first_name=Kajol, last_name=Yadav, mobile_number=9654074924, mobile_number_alt=null, email_id=rupesh0101@hotmail.com, email_id_alt=null], customer_address=CustomerAddress[flat_number=A, apartment_name=Nice, street_name=New Street, landmark=Freshco, area=MG Road, pincode=560068, country=India, state=Karnataka], customer_product=CustomerProduct[dop=2025-05-29T18:30:00.000Z, serial_number=1.05522E+14, imei1=1.05522E+14, imei2=1.05522E+14, popurl=2025-05-29T18:30:00.000Z, product_id=3, mst_model_id=3], problems=[Problems[id=4, remark=test]]]]]>
+                <![CDATA[CreateJobPayload[mst_service_location_id=1, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Somok, last_name=Mukherjee, mobile_number=8240967632, mobile_number_alt=, email_id=somokmukherjee58@gmail.com, email_id_alt=somokmukherjee58@gmail.com], customer_address=CustomerAddress[flat_number=67, apartment_name=BBC, street_name=58/3 Biren Roy Road (West), Suite, landmark=Oppo, area=Barisha, pincode=700008, country=India, state=West Bengal], customer_product=CustomerProduct[dop=2025-10-01, serial_number=95849393938392911, imei1=95849393938392911, imei2=95849393938392911, popurl=2025-10-01T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=4, remark=Lag issue]]]]]>
               </value>
             </param>
           </params>
@@ -99,10 +201,13 @@ at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(Cal
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$11.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
 at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
 at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
-at com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest.createJobApiTest(CreateJobApiExcelDataDrivenTest.java:40)
+at com.api.tests.datadriven.CreateJobApiDataDrivenTest.createJobApiTest(CreateJobApiDataDrivenTest.java:40)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -121,7 +226,61 @@ at java.base/java.lang.Thread.run(Thread.java:831)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobApiTest -->
-      </class> <!-- com.api.tests.datadriven.CreateJobApiExcelDataDrivenTest -->
+        <test-method signature="createJobApiTest(com.api.request.model.CreateJobPayload)[pri:0, instance:com.api.tests.datadriven.CreateJobApiDataDrivenTest@1ea9f6af]" started-at="2025-11-22T20:47:24 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" data-provider="createJobApiDBDataProvider" finished-at="2025-11-22T20:47:28 IST" duration-ms="4140" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CreateJobPayload[mst_service_location_id=1, mst_platform_id=2, mst_warrenty_status_id=1, mst_oem_id=1, customer=Customer[first_name=Wasis, last_name=Siddique, mobile_number=8240967632, mobile_number_alt=, email_id=somokmukherjee58@gmail.com, email_id_alt=somokmukherjee58@gmail.com], customer_address=CustomerAddress[flat_number=67, apartment_name=BBC, street_name=58/3 Biren Roy Road (West), Suite, landmark=Oppo, area=Barisha, pincode=700008, country=India, state=West Bengal], customer_product=CustomerProduct[dop=2025-10-01, serial_number=95849393938392933, imei1=95849393938392933, imei2=95849393938392933, popurl=2025-10-01T18:30:00.000Z, product_id=1, mst_model_id=1], problems=[Problems[id=4, remark=Battery issue]]]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$11.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at com.api.tests.datadriven.CreateJobApiDataDrivenTest.createJobApiTest(CreateJobApiDataDrivenTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createJobApiTest -->
+      </class> <!-- com.api.tests.datadriven.CreateJobApiDataDrivenTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -29,11 +29,11 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
 
-public class CreateJobApiDataDrivenTest {
+public class CreateJobApiDBDataDrivenTest {
 
 	@Test(description = "Verifying if create job API giving correct response and able to create Inwarranty job", groups = {
 			"api", "smoke",
-			"regression" }, dataProviderClass = com.dataprovider.DataProviderUtils.class, dataProvider = "createJobApiDBDataProvider")
+			"regression" }, dataProviderClass = com.dataprovider.DataProviderUtils.class, dataProvider = "createJobApiDataProvider")
 	public void createJobApiTest(CreateJobPayload createJobPayload) {
 
 		RestAssured.given().spec(SpecUtil.requestSpecWithAuth(Role.FD, createJobPayload)).when().post("job/create")
