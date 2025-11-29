@@ -10,9 +10,9 @@ import com.database.model.CustomerDBModel;
 public class DemoRunner {
 
 	public static void main(String[] args) throws SQLException {
-		CustomerDBModel customerDBData = CustomerDao.getCustomerInfo();
+		CustomerDBModel customerDBData = CustomerDao.getCustomerInfo(97767);
 		System.out.println(customerDBData);
-		Customer customer = new Customer("Jatin", "Yadav1", "9654074924", "9654074924", "ee@w.com", "ee.com");
+		Customer customer = new Customer("Roy", "Yadav1", "9654074924", "9654074924", "ee@w.com", "ee.com");
 		Assert.assertEquals(customerDBData.getFirst_name(), customer.first_name());
 
 	}
