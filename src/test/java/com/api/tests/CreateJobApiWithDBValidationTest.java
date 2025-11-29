@@ -13,6 +13,7 @@ import com.api.request.model.Customer;
 import com.api.request.model.CustomerAddress;
 import com.api.request.model.CustomerProduct;
 import com.api.request.model.Problems;
+import com.api.response.model.CreateJobResponseModel;
 import com.api.utils.AuthTokenProvider;
 import com.api.utils.ConfigManager;
 import com.api.utils.DateTimeUtil;
@@ -48,8 +49,8 @@ public class CreateJobApiWithDBValidationTest {
 		customer = new Customer("Rupesh", "Yadav", "9654074924", "2654074924", "rupesh@test.com", "rupesh1@tes.com");
 		customerAddress = new CustomerAddress("A", "Aban", "New Street", "Frescho", "MG Road", "560068", "India",
 				"Karnatak");
-		customerProduct = new CustomerProduct(DateTimeUtil.getTimeWithDaysAgo(10), "2475772946100869",
-				"2475772946100869", "2475772946100869", DateTimeUtil.getTimeWithDaysAgo(10), Product.NEXUS_2.getCode(),
+		customerProduct = new CustomerProduct(DateTimeUtil.getTimeWithDaysAgo(10), "2475772946987869",
+				"2475772946987869", "2475772946987869", DateTimeUtil.getTimeWithDaysAgo(10), Product.NEXUS_2.getCode(),
 				MST_MODEL.NEXUS_2_BLUE.getCode());
 		Problems problems = new Problems(Problem.SMARTPHONE_IS_RUNNING_SLOW.getCode(), "test123");
 		List<Problems> problemList = new ArrayList<Problems>();
@@ -64,20 +65,21 @@ public class CreateJobApiWithDBValidationTest {
 			"api", "smoke", "regression" })
 	public void createJobApiTest() {
 
-		Response response = RestAssured.given().spec(SpecUtil.requestSpecWithAuth(Role.FD, createJobPayload)).when()
-				.post("job/create").then().spec(SpecUtil.responseSpec_ok())
+		CreateJobResponseModel response = RestAssured.given()
+				.spec(SpecUtil.requestSpecWithAuth(Role.FD, createJobPayload)).when().post("job/create").then()
+				.spec(SpecUtil.responseSpec_ok())
 				.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("response-schema/createJobSchema.json"))
 				.body("message", Matchers.equalTo("Job created successfully. "))
 				.body("data.mst_platform_id", Matchers.equalTo(2)).body("data.job_number", Matchers.startsWith("JOB_"))
-				.extract().response();
-		int customerId = response.then().extract().jsonPath().getInt("data.tr_customer_id");
+				.extract().as(CreateJobResponseModel.class);
+		int customerId = response.getData().getTr_customer_id();
 		CustomerDBModel customerDataFromDB = CustomerDao.getCustomerInfo(customerId);
 		Assert.assertEquals(customer.first_name(), customerDataFromDB.getFirst_name());
 		Assert.assertEquals(customer.last_name(), customerDataFromDB.getLast_name());
 		CustomerAddressDBModel customerAddressDBModel = CustomerAddressDao
 				.getCustomerAddressData(customerDataFromDB.getTr_customer_address_id());
 		Assert.assertEquals(customerAddress.flat_number(), customerAddressDBModel.getFlat_number());
-		int customerProductId = response.then().extract().jsonPath().getInt("data.tr_customer_product_id");
+		int customerProductId = response.getData().getTr_customer_product_id();
 		CustomerProductDBModel customerProductDBData = CustomerProductDao.getCustomerProductData(customerProductId);
 		Assert.assertEquals(customerProductDBData.getImei1(), customerProduct.imei1());
 		Assert.assertEquals(customerProductDBData.getImei2(), customerProduct.imei2());
