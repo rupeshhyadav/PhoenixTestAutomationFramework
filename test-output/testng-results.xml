@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-29T11:20:09 IST" name="Default suite" finished-at="2025-11-29T11:20:12 IST" duration-ms="3501">
+  <suite started-at="2025-11-29T14:35:02 IST" name="Default suite" finished-at="2025-11-29T14:35:06 IST" duration-ms="3521">
     <groups>
       <group name="regression">
         <method signature="CreateJobApiWithDBValidationTest.createJobApiTest()[pri:0, instance:com.api.tests.CreateJobApiWithDBValidationTest@6356695f]" name="createJobApiTest" class="com.api.tests.CreateJobApiWithDBValidationTest"/>
@@ -14,26 +14,26 @@
         <method signature="CreateJobApiWithDBValidationTest.createJobApiTest()[pri:0, instance:com.api.tests.CreateJobApiWithDBValidationTest@6356695f]" name="createJobApiTest" class="com.api.tests.CreateJobApiWithDBValidationTest"/>
       </group> <!-- api -->
     </groups>
-    <test started-at="2025-11-29T11:20:09 IST" name="Default test" finished-at="2025-11-29T11:20:12 IST" duration-ms="3501">
+    <test started-at="2025-11-29T14:35:02 IST" name="Default test" finished-at="2025-11-29T14:35:06 IST" duration-ms="3521">
       <class name="com.api.tests.CreateJobApiWithDBValidationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.api.tests.CreateJobApiWithDBValidationTest@6356695f]" started-at="2025-11-29T11:20:09 IST" name="setUp" description="Creating create job payload" finished-at="2025-11-29T11:20:09 IST" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.api.tests.CreateJobApiWithDBValidationTest@6356695f]" started-at="2025-11-29T14:35:02 IST" name="setUp" description="Creating create job payload" finished-at="2025-11-29T14:35:02 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="createJobApiTest()[pri:0, instance:com.api.tests.CreateJobApiWithDBValidationTest@6356695f]" started-at="2025-11-29T11:20:09 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" finished-at="2025-11-29T11:20:12 IST" duration-ms="3449" status="FAIL">
+        <test-method signature="createJobApiTest()[pri:0, instance:com.api.tests.CreateJobApiWithDBValidationTest@6356695f]" started-at="2025-11-29T14:35:02 IST" name="createJobApiTest" description="Verifying if create job API giving correct response and able to create Inwarranty job" finished-at="2025-11-29T14:35:06 IST" duration-ms="3471" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [2025-11-19T05:50:09.095203Z] but found [2025-11-19]]]>
+              <![CDATA[expected [2025-11-19T09:05:02.865383Z] but found [2025-11-19]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [2025-11-19T05:50:09.095203Z] but found [2025-11-19]
+              <![CDATA[java.lang.AssertionError: expected [2025-11-19T09:05:02.865383Z] but found [2025-11-19]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.api.tests.CreateJobApiWithDBValidationTest.createJobApiTest(CreateJobApiWithDBValidationTest.java:84)
+at com.api.tests.CreateJobApiWithDBValidationTest.createJobApiTest(CreateJobApiWithDBValidationTest.java:88)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
