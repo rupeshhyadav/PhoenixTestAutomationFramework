@@ -40,6 +40,11 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+    - name: Creating the .env file
+      run: |
+            echo "DB_URL=${{  secrests.DB_URL  }}" >> .env
+            echo "DB_USERNAME=${{  secrests.DB_USERNAME  }}" >> .env
+            echo "DB_PASSWORD=${{  secrests.DB_PASSWORD  }}" >> .env
     - name: Set default input if missing
       id: default
       run: |
