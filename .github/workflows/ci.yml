@@ -20,7 +20,7 @@ on:
       suiteXmlFile:
         description: "TestNG XML File"
         type: choice
-        options: [testNg.xml,smoke.xml]
+        options: [testNg.xml,smoke.xml,testNg-datadriven.xml]
         default: testNg.xml
         required: true
        
